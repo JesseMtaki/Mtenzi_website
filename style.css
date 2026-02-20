@@ -187,7 +187,36 @@ span {
     background: var(--snd-bg-color);
 }
 
-.about-img {
+.about-img img {
     width: 25vw;
     border: 2px solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.about-img img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+               0 0 35px var(--main-color),
+               0 0 45px var(--main-color); 
+}
+
+.about-content h2 {
+    font-size: 6rem;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content {
+    padding: 0 4rem;
+}
+
+.about-content h3 {
+    font-size: 3rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
 }
