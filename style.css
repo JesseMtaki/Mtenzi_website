@@ -230,6 +230,7 @@ span {
 /*Works code section*/
 
 .works h2 {
+    text-align: center;
     margin-bottom: 5rem;
 }
 
@@ -254,4 +255,18 @@ span {
 .works-container .work-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
+}
+
+.work-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.work-box h3 {
+    font-size: 2.6rem;
+}
+
+.work-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0rem 3rem;
 }
