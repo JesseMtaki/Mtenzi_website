@@ -202,6 +202,12 @@ span {
                0 0 45px var(--main-color); 
 }
 
+.heading {
+    font-size: 6rem;
+    text-align: left;
+    line-height: 1.2;
+}
+
 .about-content h2 {
     font-size: 6rem;
     text-align: left;
@@ -219,4 +225,33 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+/*Works code section*/
+
+.works h2 {
+    margin-bottom: 5rem;
+}
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.works-container .work-box {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.3rem solid var(--bg-color);
+    transition: 0.3s ease;
+}
+
+.works-container .work-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
 }
