@@ -36,7 +36,7 @@
         <div class="home-content">
             <h3>Hello, Welcome</h3>
             <h1>Fredrick Mtenzi</h1>
-            <h3>And I am an <span class="multiple-texts">Associate Professor</span></h3>
+            <h3>And I am <span class="multiple-texts">an Associate Professor</span></h3>
             <p>
                 Former Head of Research and founder of IA-HUB TZ at Aga Khan University, where I spearhead large-scale
                 digital initiatives to enhance teacher professional development across East Africa.
@@ -48,8 +48,8 @@
             </p>
 
             <div class="social-media">
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/fredrick-mtenzi-3a193910/"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=sbSYrIAAAAAJ&hl=en&oi=ao"><i class="bx bx-library"></i></a>
                 <a href="#"><i class="bx bxl-instagram"></i></a>
                 <a href="#"><i class="bx bxl-twitter"></i></a>
                 <a href="#"><i class="bx bxl-github"></i></a>
@@ -135,18 +135,22 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form action="https://formspree.io/f/xnjboplg" method="post">
             <div class="input-box">
-                <input type="text" placeholder="full-name">
-                <input type="email" name="Email" placeholder="E-mail Adress">
+                <input type="text"  name="fullname" placeholder="full-name" required>
+                <input type="email" name="Email" placeholder="E-mail Adress" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Email subject">
+                <input type="tel" placeholder="Phone Number" name="number">
+                <input type="text" placeholder="Email subject" name="subject">
             </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn" id="submit-btn">
         </form>
+
+        <div class="toast" id="toast-success">
+            Message Sent Successifully
+        </div>
     </section>
 
     <!--Footer Section-->
@@ -163,6 +167,9 @@
             &copy; Fredrick Mtenzi - All Right Reserved
         </p>
     </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="script.js" defer></script>
     
 </body>
 
