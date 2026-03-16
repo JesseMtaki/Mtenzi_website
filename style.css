@@ -279,7 +279,337 @@ span {
 
 .publications h2 {
     text-align: center;
+    margin-bottom: 5rem;
 }
+
+
+.publications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.publications-container .publications-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.3rem solid var(--bg-color);
+    transition: 0.3s ease;
+}
+
+.publications-container .publications-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.publications-box h3 {
+    font-size: 2rem;
+}
+
+.publications-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0rem 3rem;
+}
+
+.to-pub {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+ /* Additional styles specific to publications page */
+ 
+        .publications-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .publications-header h1 {
+            font-size: 6rem;
+            color: var(--text-color);
+            line-height: 1.2;
+        }
+
+        .publications-header h1 span {
+            color: var(--main-color);
+        }
+
+        .publications-header p {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            opacity: 0.8;
+            max-width: 800px;
+            margin: 2rem auto 0;
+        }
+
+        .filters {
+            background: var(--bg-color);
+            padding: 2.5rem;
+            border-radius: 2rem;
+            box-shadow: 0 0 20px rgba(0, 127, 115, 0.1);
+            margin-bottom: 4rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+            border: 0.2rem solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .filters:hover {
+            border-color: var(--main-color);
+        }
+
+        .filter-btn {
+            padding: 1rem 2.5rem;
+            border-radius: 4rem;
+            background: var(--snd-bg-color);
+            color: var(--text-color);
+            font-size: 1.6rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border: 0.2rem solid transparent;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--main-color);
+            transform: scale(1.05);
+        }
+
+        .filter-btn.active {
+            background: var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 28rem;
+            padding: 1.2rem 2rem;
+            border-radius: 4rem;
+            background: var(--snd-bg-color);
+            font-size: 1.6rem;
+            color: var(--text-color);
+            border: 0.2rem solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: var(--main-color);
+        }
+
+        .stats {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: 0 0 20px rgba(0, 127, 115, 0.1);
+            margin-bottom: 3rem;
+            display: flex;
+            gap: 3rem;
+            justify-content: flex-end;
+            border: 0.2rem solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .stats:hover {
+            border-color: var(--main-color);
+        }
+
+        .stat-item {
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .stat-number {
+            font-weight: 700;
+            color: var(--main-color);
+            margin-left: 0.8rem;
+            font-size: 2.2rem;
+        }
+
+        .publications-section {
+            background: var(--bg-color);
+            border-radius: 2rem;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 0 20px rgba(0, 127, 115, 0.1);
+            border: 0.2rem solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .publications-section:hover {
+            border-color: var(--main-color);
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: var(--main-color);
+            border-bottom: 0.3rem solid var(--main-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+            display: inline-block;
+        }
+
+        .publication-item {
+            padding: 2.5rem;
+            border-bottom: 0.1rem solid rgba(0, 127, 115, 0.2);
+            transition: 0.3s ease;
+            border-radius: 1rem;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .publication-item:hover {
+            background: var(--snd-bg-color);
+            transform: translateX(1rem);
+        }
+
+        .publication-authors {
+            font-size: 1.8rem;
+            color: var(--main-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .publication-title {
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .publication-journal {
+            font-size: 1.6rem;
+            color: var(--text-color);
+            opacity: 0.8;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .publication-links {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .publication-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.8rem 2rem;
+            background: var(--main-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            border-radius: 4rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: 0.3s ease;
+            border: 0.2rem solid transparent;
+        }
+
+        .publication-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--main-color);
+        }
+
+        .publication-doi {
+            font-size: 1.4rem;
+            color: var(--text-color);
+            opacity: 0.7;
+            background: var(--snd-bg-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 4rem;
+        }
+
+        .no-publications {
+            text-align: center;
+            padding: 5rem;
+            font-size: 2rem;
+            color: var(--text-color);
+            background: var(--snd-bg-color);
+            border-radius: 2rem;
+        }
+
+        .manage-info {
+            background: linear-gradient(135deg, var(--main-color), #004d45);
+            color: var(--bg-color);
+            padding: 2.5rem;
+            border-radius: 2rem;
+            margin-top: 4rem;
+            font-size: 1.6rem;
+        }
+
+        .manage-info h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .manage-info pre {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 1.4rem;
+        }
+
+        .manage-info code {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 3rem;
+            font-size: 1.8rem;
+            color: var(--main-color);
+            transition: 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-1rem);
+        }
+
+        @media (max-width: 768px) {
+            .publications-header h1 {
+                font-size: 4rem;
+            }
+            
+            .filters {
+                flex-direction: column;
+            }
+            
+            .filter-btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .publication-item:hover {
+                transform: translateX(0);
+            }
+        }
 
 /* contact Section code*/
 
